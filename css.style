@@ -1,0 +1,86 @@
+/* Basic reset for padding and margin */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Header Style */
+header {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Navigation Style */
+nav {
+    background: #444;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: #575757;
+}
+
+/* Main Content Style */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.content .main {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content .sidebar {
+    width: 300px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Style */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content .sidebar {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
